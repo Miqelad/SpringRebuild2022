@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!--hello-->
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hello!
+<!--используется как ссылка на переход-->
+<a href="goodbye.html">Say goodbye</a>
+<a href="/first/hello?name=Paata&surname=Mikeladze">Request</a>
+<!--обратимся по ключу и он вставит сюда значение-->
+<p th:text="${message}"></p>
+
+</body>
+</html>

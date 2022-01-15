@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!--index-->
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Все люди</title>
+</head>
+<body>
+<!--цикл для коллекции-->
+<div th:each="person: ${people}">
+<!--    получаем ИД каждого человека, кладем ее во временную ссылку-->
+    <a th:href="@{/people/{id}(id=${person.getId()})}" th:text="${person.getName()}">user</a>
+
+</div>
+
+</body>
+</html>
